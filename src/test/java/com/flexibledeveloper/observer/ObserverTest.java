@@ -28,8 +28,6 @@ public class ObserverTest {
     subject.registerObserver(percussionSection);
     subject.registerObserver(brassSection);
 
-
-
     List<MeasureInformation> playList = new ArrayList<MeasureInformation>();
     playList.add(new MeasureInformation(1,"softly"));
     playList.add(new MeasureInformation(2,"softly"));

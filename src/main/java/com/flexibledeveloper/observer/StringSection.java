@@ -17,7 +17,7 @@ public class StringSection implements Observer, PlayMeasure {
     System.out.print("String Section ");
     // Only play every 3 measures
     if (measureInformation !=null && (measureInformation.getMeasure() % 3 != 0 )) {
-      System.out.println(" strumming " + measureInformation.getDetails());
+      System.out.println("strumming " + measureInformation.getDetails());
     } else {
       System.out.println("waiting...");
     }

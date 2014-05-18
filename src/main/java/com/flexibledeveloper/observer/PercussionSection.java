@@ -17,7 +17,7 @@ public class PercussionSection implements Observer, PlayMeasure {
     System.out.print("Percussion section ");
     // Only drum on odd measures
     if (measureInformation !=null && (measureInformation.getMeasure() % 2 != 0 )) {
-      System.out.println(" drumming " + measureInformation.getDetails());
+      System.out.println("drumming " + measureInformation.getDetails());
     } else {
       System.out.println("waiting...");
     }

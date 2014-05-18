@@ -17,7 +17,7 @@ public class WoodwindSection implements Observer, PlayMeasure {
     System.out.print("Woodwind Section ");
     // Play every measure
     if (measureInformation != null) {
-      System.out.println(" puffing " + measureInformation.getDetails());
+      System.out.println("puffing " + measureInformation.getDetails());
     } else {
       System.out.println("waiting...");
     }

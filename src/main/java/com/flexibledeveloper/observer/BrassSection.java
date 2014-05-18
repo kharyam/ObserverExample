@@ -19,7 +19,7 @@ public class BrassSection implements Observer, PlayMeasure {
     if (measureInformation !=null && (measureInformation.getMeasure() > 3 )) {
       System.out.println("blowing "+ measureInformation.getDetails());
     } else {
-      System.out.println("waiting");
+      System.out.println("waiting...");
     }
   }
 }
