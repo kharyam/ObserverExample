@@ -6,17 +6,17 @@ import java.util.List;
 /**
  * Created by kharyam on 5/17/14.
  */
-public class ConcreteSubject implements Subject {
+public class Conductor implements Subject {
 
   private List<Observer> observers = new ArrayList<Observer>();
-  private Data data;
+  private MeasureInformation measureInformation;
 
-  public Data getData() {
-    return data;
+  public MeasureInformation getMeasureInformation() {
+    return measureInformation;
   }
 
-  public void setData(Data data) {
-    this.data = data;
+  public void setMeasureInformation(MeasureInformation measureInformation) {
+    this.measureInformation = measureInformation;
   }
 
   @Override
@@ -32,12 +32,12 @@ public class ConcreteSubject implements Subject {
   @Override
   public void notifyObservers() {
     for (Observer observer : observers) {
-      observer.update(data);
+      observer.update(measureInformation);
     }
   }
 
-  public void notifyObservers(Data data){
-    this.data = data;
+  public void notifyObservers(MeasureInformation measureInformation){
+    this.measureInformation = measureInformation;
     notifyObservers();
   }
 
